@@ -59,7 +59,7 @@ export function Calculator() {
                 }
             }
             // One number
-        } else if (operator === '**') {
+        } else if (operator === 'sqrt') {
             let squareRoot = Math.sqrt(parseFloat(keepNumber));
 
             if (String(squareRoot).length >= 4) {
@@ -106,7 +106,7 @@ export function Calculator() {
                         <tbody> 
                             <tr>
                                 <td><button onClick={clearScreen}>C</button></td>
-                                <td><button onClick={operations} value="**">√</button></td>
+                                <td><button onClick={operations} value="sqrt">√</button></td>
                                 <td><button onClick={operations} value="%">%</button></td>
                                 <td><button onClick={operations} value="/">/</button></td>
                             </tr>
